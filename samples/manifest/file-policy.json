@@ -1,0 +1,24 @@
+{
+  "repo": "tsmithcode/cadguardian-revit-bim-automation-proof",
+  "allowedPublicFiles": [
+    "README.md",
+    "index.html",
+    "docs",
+    "scripts",
+    "src",
+    "synthetic JSON/CSV fixtures"
+  ],
+  "blockedPublicFiles": [
+    ".dgn",
+    ".dwg",
+    ".iam",
+    ".idw",
+    ".ipt",
+    ".rfa",
+    ".rvt",
+    ".sldasm",
+    ".slddrw",
+    ".sldprt"
+  ],
+  "rule": "Never claim geometry, repair, conversion, or native validation without a supported local tool receipt."
+}

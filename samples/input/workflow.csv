@@ -1,0 +1,9 @@
+step,owner,evidence
+1,BIM document request,review note
+2,Model context contract,review note
+3,Revit API adapter boundary,review note
+4,IFC-safe reference package,review note
+5,Parameter and schedule checks,review note
+6,Sheet/export report,review note
+7,BIM reviewer gate,review note
+8,Approved next slice,review note

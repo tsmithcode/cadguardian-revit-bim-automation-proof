@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "cadg.public_proof_packet.1",
+  "repo": "tsmithcode/cadguardian-revit-bim-automation-proof",
+  "title": "Revit and BIM Workflow Automation Proof",
+  "servicePath": "https://www.cadguardian.com/services/revit-bim-automation",
+  "story": "A BIM team needs model-adjacent automation without guessing across families, parameters, sheets, schedules, or document ownership.",
+  "workflow": [
+    "BIM document request",
+    "Model context contract",
+    "Revit API adapter boundary",
+    "IFC-safe reference package",
+    "Parameter and schedule checks",
+    "Sheet/export report",
+    "BIM reviewer gate",
+    "Approved next slice"
+  ],
+  "stack": [
+    "Revit API",
+    "BIM",
+    "IFC",
+    "families",
+    "parameters",
+    "sheets",
+    "schedules"
+  ],
+  "publicBoundary": "Public packet contains synthetic fixtures, source manifests, code scaffolds, and validation posture only.",
+  "agentOpsPolicy": {
+    "noSourceMutation": true,
+    "noCloudUploadOfRawCad": true,
+    "rawCadBinariesToAi": false,
+    "catalogOnlyFormats": [
+      ".dgn",
+      ".dwg",
+      ".iam",
+      ".idw",
+      ".ipt",
+      ".rfa",
+      ".rvt",
+      ".sldasm",
+      ".slddrw",
+      ".sldprt"
+    ]
+  }
+}

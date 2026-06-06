@@ -1,0 +1,17 @@
+{
+  "requestId": "cadg-revit-demo-001",
+  "documentClass": "demo-sheet-and-schedule-package",
+  "runtimeDecision": "Revit API add-in or utility only after model context and parameter ownership are clear.",
+  "expectedOutputs": [
+    "parameter map",
+    "sheet package manifest",
+    "schedule validation",
+    "review issue list"
+  ],
+  "validationRules": [
+    "shared parameters named",
+    "sheet set mapped",
+    "schedule fields checked",
+    "model assumptions flagged"
+  ]
+}

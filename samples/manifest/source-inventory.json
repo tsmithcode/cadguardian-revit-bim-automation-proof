@@ -1,0 +1,21 @@
+{
+  "policy": "buildingSMART IFC samples are referenced as open BIM fixtures. This repo does not bundle RVT/RFA files.",
+  "filesAreBundled": false,
+  "reason": "AgentOps policy blocks raw CAD cloud upload. Public proof references approved library sources and uses synthetic fixtures.",
+  "sources": [
+    {
+      "sourceId": "buildingsmart_ifc_samples",
+      "relativePath": "raw/buildingsmart_ifc_samples/IFC 4.0.2.1 (IFC 4)/PCERT-Sample-Scene/Building-Architecture.ifc",
+      "format": "IFC",
+      "usage": "Metadata-first BIM reference for model-context checks.",
+      "publicUse": "Reference only."
+    },
+    {
+      "sourceId": "buildingsmart_ifc_samples",
+      "relativePath": "raw/buildingsmart_ifc_samples/IFC 4.0.2.1 (IFC 4)/ISO Spec - ReferenceView_V1.2/wall-with-opening-and-window.ifc",
+      "format": "IFC",
+      "usage": "Small wall/opening/window fixture for parameter conversation.",
+      "publicUse": "Reference only."
+    }
+  ]
+}
