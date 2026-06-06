@@ -1,33 +1,48 @@
 {
-  "requestId": "cadg-revit-demo-001",
-  "runtimeDecision": "Revit API add-in or utility only after model context and parameter ownership are clear.",
+  "requestId": "cadg-revit-kit-001",
+  "kitType": "CAD Guardian quick-start automation kit",
+  "repo": "tsmithcode/cadguardian-revit-bim-automation-proof",
+  "runtimeDecision": "Use C# for IFC/package validation and a Revit API external command only after model ownership and parameter rules are clear.",
+  "apiSignals": [
+    "IExternalCommand",
+    "ExternalCommandData",
+    "Document",
+    "Transaction",
+    "FilteredElementCollector",
+    "Parameter",
+    "FamilyInstance",
+    "ViewSheet",
+    "ViewSchedule",
+    "BuiltInCategory",
+    "BuiltInParameter"
+  ],
   "expectedOutputs": [
-    "parameter map",
-    "sheet package manifest",
-    "schedule validation",
-    "review issue list"
+    "bim-context-report",
+    "parameter-checks",
+    "sheet-schedule-readiness",
+    "native adapter notes"
   ],
   "validation": [
     {
-      "rule": "shared parameters named",
+      "rule": "IFC fixtures are present and attributed",
       "status": "review-ready",
-      "evidence": "Synthetic fixture only. Run local CAD checks against AgentOps-approved source files for tool receipts."
+      "evidence": "Public quick-start kit fixture, API walkthrough, or native adapter example is present."
     },
     {
-      "rule": "sheet set mapped",
+      "rule": "IFC text exposes model/object markers",
       "status": "review-ready",
-      "evidence": "Synthetic fixture only. Run local CAD checks against AgentOps-approved source files for tool receipts."
+      "evidence": "Public quick-start kit fixture, API walkthrough, or native adapter example is present."
     },
     {
-      "rule": "schedule fields checked",
+      "rule": "Parameter, sheet, and schedule checks are represented",
       "status": "review-ready",
-      "evidence": "Synthetic fixture only. Run local CAD checks against AgentOps-approved source files for tool receipts."
+      "evidence": "Public quick-start kit fixture, API walkthrough, or native adapter example is present."
     },
     {
-      "rule": "model assumptions flagged",
+      "rule": "Revit API external command handoff is documented",
       "status": "review-ready",
-      "evidence": "Synthetic fixture only. Run local CAD checks against AgentOps-approved source files for tool receipts."
+      "evidence": "Public quick-start kit fixture, API walkthrough, or native adapter example is present."
     }
   ],
-  "publicBoundary": "No private client files, login material, raw opportunity notes, or catalog-only native CAD binaries are included."
+  "publicBoundary": "No private client files, login material, raw opportunity notes, or license-uncertain CAD assets are included."
 }

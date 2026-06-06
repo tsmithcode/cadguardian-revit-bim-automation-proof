@@ -1,71 +1,67 @@
-# Revit and BIM Workflow Automation Proof
+# Revit and BIM Workflow Quick-Start Automation Kit
 
-CAD Guardian proof repo for technical interviews, buyer reviews, and peer walkthroughs.
+CAD Guardian quick-start automation kit for peer walkthroughs, technical interviews, and buyer-facing business-case discussions.
 
 > This CAD library is in development. This is an early public preview for feedback on the best business case, workflow shape, and proof path.
 
-## Story
-A BIM team needs model-adjacent automation without guessing across families, parameters, sheets, schedules, or document ownership.
+## STAR story
 
-## Business case
-The proof narrows the model/document boundary before anyone automates across a live workshared model.
+**Situation:** A BIM team wants faster model-adjacent output, but families, parameters, sheets, schedules, and review ownership make automation risky.
 
-## Workflow
-- BIM document request
-- Model context contract
-- Revit API adapter boundary
-- IFC-safe reference package
-- Parameter and schedule checks
-- Sheet/export report
-- BIM reviewer gate
-- Approved next slice
+**Task:** Create a public-safe quickstart that proves model context and document checks before a Revit API add-in touches a live model.
 
-## Stack vocabulary
-- Revit API
-- BIM
-- IFC
-- families
-- parameters
-- sheets
-- schedules
+**Action:** Bundle approved buildingSMART IFC fixtures, validate model-context signals, and show a Revit external command scaffold for parameters, sheets, schedules, and family instances.
 
-## Run
+**Result:** Reviewers can run a safe BIM package check and discuss the native Revit API boundary with concrete class names.
+
+## Fast run
 
 ```bash
 npm run doctor
 npm run verify
 npm run demo
-npm run sanitize
+dotnet build quickstart
+dotnet run --project quickstart
 ```
 
-Expected demo output: `reports/demo-validation-report.json` with a review-ready status, validation checks, stop conditions, and the public CAD data boundary.
+The C# quickstart writes `reports/quickstart-report.json`. The Node demo writes `reports/demo-validation-report.json`.
 
-## Runtime model
-This repo is tiered:
+## What is included
 
-- Public demo: runs anywhere with Node.js and synthetic fixtures.
-- Optional native/runtime check: `npm run runtime:check` reports whether local CAD/API tooling appears available.
-- Real CAD files: stay in an AgentOps-controlled private library unless explicitly approved for a private runtime receipt.
+- Runnable C# quickstart in `quickstart/`.
+- Optional native/runtime examples in `native/`.
+- Safe public fixtures in `fixtures/public/`.
+- STAR story, API walkthrough, native runtime notes, interview script, and expected outcome docs.
 
-## Guides
-- [User guide](docs/USER_GUIDE.md)
-- [Runtime guide](docs/RUNTIME_GUIDE.md)
-- [API references](docs/API_REFERENCES.md)
-- [Expected outcome](docs/EXPECTED_OUTCOME.md)
-- [Development preview warning](docs/DEVELOPMENT_PREVIEW.md)
+## Workflow
 
-## Official references
-- [Revit API Developer Guide](https://help.autodesk.com/view/RVT/2024/ENU/?guid=Revit_API_Revit_API_Developers_Guide_html) - Model, parameter, document, and add-in vocabulary.
-- [Autodesk APS Automation APIs](https://aps.autodesk.com/automation-apis) - External automation option when workload/runtime compatibility is proven.
-- [AWS API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html) - API front door, status endpoints, and service boundary discussion.
-- [AWS Step Functions](https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html) - State-machine orchestration, retries, and staged workflow discussion.
-- [Azure Functions](https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview) - Event-driven job/API shape when the platform standard is Azure.
-- [Azure Service Bus](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview) - Queue and service-bus vocabulary for async CAD work.
+- BIM document request
+- IFC fixture inventory
+- Model context contract
+- Parameter check
+- Sheet and schedule check
+- Revit add-in boundary
+- BIM review gate
+- Approved next slice
 
-## Public CAD data boundary
-buildingSMART IFC samples are referenced as open BIM fixtures. This repo does not bundle RVT/RFA files.
+## API and runtime signals
 
-This repository is built for public proof. It includes source inventory manifests, synthetic input fixtures, validation examples, and adapter code shaped for walkthroughs. It does not include private drawings, proprietary project files, login material, raw opportunity notes, or native CAD files that AgentOps marks catalog-only.
+- IExternalCommand
+- ExternalCommandData
+- Document
+- Transaction
+- FilteredElementCollector
+- Parameter
+- FamilyInstance
+- ViewSheet
+- ViewSchedule
+- BuiltInCategory
+- BuiltInParameter
 
-## Related service page
+## Public fixture boundary
+
+Only approved public sample files are bundled. No client files, private drawings, credentials, raw opportunity notes, or license-uncertain CAD assets are included.
+
+## Service page
+
 https://www.cadguardian.com/services/revit-bim-automation

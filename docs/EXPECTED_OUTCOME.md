@@ -1,24 +1,27 @@
 # Expected Outcome
 
-After running `npm run demo`, the repo writes:
+After running:
+
+```bash
+dotnet run --project quickstart
+```
+
+the repo writes:
 
 ```
-reports/demo-validation-report.json
+reports/quickstart-report.json
 ```
 
-The report should contain:
+The report must include:
 
-- `requestId`: cadg-revit-demo-001
-- `runtimeDecision`: Revit API add-in or utility only after model context and parameter ownership are clear.
-- `expectedOutputs`: parameter map, sheet package manifest, schedule validation, review issue list
-- `validation`: one review-ready row per validation rule
-- `publicBoundary`: a reminder that private files and native CAD binaries are not bundled
+- `Status`: review-ready or review-required.
+- `Fixtures`: approved public fixture receipts with size and SHA-256.
+- `Checks`: validation checks tied to the workflow.
+- `ApiSignals`: the native/API vocabulary this kit is prepared to discuss.
 
-## Stop conditions
+Expected outputs for this kit:
 
-The proof should stop instead of overclaiming when:
-
-- Accepted output examples are missing.
-- Native runtime execution cannot produce a local tool receipt.
-- Reviewer ownership is unclear.
-- The requested proof requires private files in a public repo.
+- bim-context-report
+- parameter-checks
+- sheet-schedule-readiness
+- native adapter notes

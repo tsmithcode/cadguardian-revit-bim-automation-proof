@@ -1,21 +1,36 @@
 {
-  "policy": "buildingSMART IFC samples are referenced as open BIM fixtures. This repo does not bundle RVT/RFA files.",
-  "filesAreBundled": false,
-  "reason": "AgentOps policy blocks raw CAD cloud upload. Public proof references approved library sources and uses synthetic fixtures.",
+  "filesAreBundled": true,
+  "policy": "Only approved public CAD fixtures from AgentOps public CAD library are bundled. License-uncertain and private files are excluded.",
   "sources": [
     {
+      "source": "buildingsmart_ifc_samples/IFC 4.0.2.1 (IFC 4)/PCERT-Sample-Scene/Building-Architecture.ifc",
+      "destination": "fixtures/public/buildingsmart/Building-Architecture.ifc",
       "sourceId": "buildingsmart_ifc_samples",
-      "relativePath": "raw/buildingsmart_ifc_samples/IFC 4.0.2.1 (IFC 4)/PCERT-Sample-Scene/Building-Architecture.ifc",
-      "format": "IFC",
-      "usage": "Metadata-first BIM reference for model-context checks.",
-      "publicUse": "Reference only."
+      "license": "Creative Commons Attribution 4.0 International",
+      "attribution": "buildingSMART Sample Test Files",
+      "use": "BIM architecture model-context fixture.",
+      "tokens": [
+        "IFC",
+        "IFCPROJECT"
+      ],
+      "bundledPath": "fixtures/public/buildingsmart/Building-Architecture.ifc",
+      "sizeBytes": 225635,
+      "sha256": "3ff9b10bd00c7b96dded51e7ca5a6b69efbea38b049adcdd05fcd247de7e70d5"
     },
     {
+      "source": "buildingsmart_ifc_samples/IFC 4.0.2.1 (IFC 4)/ISO Spec - ReferenceView_V1.2/wall-with-opening-and-window.ifc",
+      "destination": "fixtures/public/buildingsmart/wall-with-opening-and-window.ifc",
       "sourceId": "buildingsmart_ifc_samples",
-      "relativePath": "raw/buildingsmart_ifc_samples/IFC 4.0.2.1 (IFC 4)/ISO Spec - ReferenceView_V1.2/wall-with-opening-and-window.ifc",
-      "format": "IFC",
-      "usage": "Small wall/opening/window fixture for parameter conversation.",
-      "publicUse": "Reference only."
+      "license": "Creative Commons Attribution 4.0 International",
+      "attribution": "buildingSMART Sample Test Files",
+      "use": "Small wall/opening/window parameter fixture.",
+      "tokens": [
+        "IFCWALL",
+        "IFCWINDOW"
+      ],
+      "bundledPath": "fixtures/public/buildingsmart/wall-with-opening-and-window.ifc",
+      "sizeBytes": 12492,
+      "sha256": "73b0e45d931d5dc13bfee5fdc7bd80f796526445458b2de74c4168d209097832"
     }
   ]
 }

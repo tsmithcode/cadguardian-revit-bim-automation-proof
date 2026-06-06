@@ -1,17 +1,32 @@
 {
-  "requestId": "cadg-revit-demo-001",
-  "documentClass": "demo-sheet-and-schedule-package",
-  "runtimeDecision": "Revit API add-in or utility only after model context and parameter ownership are clear.",
-  "expectedOutputs": [
-    "parameter map",
-    "sheet package manifest",
-    "schedule validation",
-    "review issue list"
+  "requestId": "cadg-revit-kit-001",
+  "workflowClass": "bim-document-readiness",
+  "runtimeDecision": "Use C# for IFC/package validation and a Revit API external command only after model ownership and parameter rules are clear.",
+  "reviewOwner": "BIM manager",
+  "kitType": "CAD Guardian quick-start automation kit",
+  "apiSignals": [
+    "IExternalCommand",
+    "ExternalCommandData",
+    "Document",
+    "Transaction",
+    "FilteredElementCollector",
+    "Parameter",
+    "FamilyInstance",
+    "ViewSheet",
+    "ViewSchedule",
+    "BuiltInCategory",
+    "BuiltInParameter"
   ],
   "validationRules": [
-    "shared parameters named",
-    "sheet set mapped",
-    "schedule fields checked",
-    "model assumptions flagged"
+    "IFC fixtures are present and attributed",
+    "IFC text exposes model/object markers",
+    "Parameter, sheet, and schedule checks are represented",
+    "Revit API external command handoff is documented"
+  ],
+  "expectedOutputs": [
+    "bim-context-report",
+    "parameter-checks",
+    "sheet-schedule-readiness",
+    "native adapter notes"
   ]
 }
