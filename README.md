@@ -1,3 +1,9 @@
+<p align="left">
+  <a href="https://www.cadguardian.com/">
+    <img src="assets/cad-guardian-logo-highlighted.png" alt="CAD Guardian logo" width="120">
+  </a>
+</p>
+
 # Revit and BIM Workflow Quick-Start Automation Kit
 
 CAD Guardian Pareto quick-start automation kit for drafters, CAD automation peers, technical interviews, and buyer-facing business-case discussions.
