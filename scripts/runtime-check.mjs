@@ -23,6 +23,6 @@ const commonLocalHints = [
 const visibleHints = commonLocalHints.filter((path) => existsSync(path));
 
 console.log("Revit and BIM Workflow Quick-Start Automation Kit");
-console.log("API/native vocabulary:", runtimeHints.join(", "));
+console.log("Native/API vocabulary:", runtimeHints.join(", "));
 console.log("Visible local runtime hints:", visibleHints.length > 0 ? visibleHints.join(", ") : "none detected");
 console.log("Public quickstart is runnable without licensed CAD. Native adapters require the matching local CAD/runtime environment.");

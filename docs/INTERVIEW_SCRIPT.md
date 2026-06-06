@@ -1,17 +1,21 @@
 # Interview Script
 
-## 30-second frame
+## Open
 
-This is a CAD Guardian quick-start kit: public fixtures, runnable C# validation, optional native adapter examples, and a STAR story for a real class of CAD automation demand.
+"This is not a fake full product. It is a small CAD Guardian quick-start kit that proves the highest-risk boundary before anyone automates production files."
 
 ## Walkthrough
 
-1. Open `docs/STAR.md`.
-2. Run `dotnet run --project quickstart`.
+1. Start with the STAR story in `docs/STAR.md`.
+2. Run `npm run demo`.
 3. Open `reports/quickstart-report.json`.
-4. Point to the native examples that match the runtime question.
-5. Explain the stop condition: public proof first, licensed native receipt second, production automation only after review gates are accepted.
+4. Point to the Pareto checks and explain which one would become the first private pilot.
+5. Open the matching native example under `native/` and explain the licensed runtime boundary.
 
-## Strong answer
+## Best answer to skepticism
 
-Reviewers can run a safe BIM package check and discuss the native Revit API boundary with concrete class names.
+"The public code intentionally does less than the native runtime. That is the point. It proves the package, rules, and business impact before touching private CAD files."
+
+## Close
+
+Pick one sheet/schedule/family outcome, name required parameters, then prove whether the Revit add-in boundary is justified.

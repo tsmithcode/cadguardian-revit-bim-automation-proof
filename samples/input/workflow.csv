@@ -1,9 +1,0 @@
-step,workflow,evidence
-1,BIM document request,quickstart or native adapter note
-2,IFC fixture inventory,quickstart or native adapter note
-3,Model context contract,quickstart or native adapter note
-4,Parameter check,quickstart or native adapter note
-5,Sheet and schedule check,quickstart or native adapter note
-6,Revit add-in boundary,quickstart or native adapter note
-7,BIM review gate,quickstart or native adapter note
-8,Approved next slice,quickstart or native adapter note
