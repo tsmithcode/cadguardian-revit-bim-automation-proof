@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc">
+  <title id="title">CAD Guardian Revit BIM Automation Proof</title>
+  <desc id="desc">Social preview for the Revit and BIM Workflow Quick-Start Automation Kit with service lane, proof decision, and run command.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07090d"/>
+      <stop offset="0.62" stop-color="#111722"/>
+      <stop offset="1" stop-color="#07090d"/>
+    </linearGradient>
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f4c95d"/>
+      <stop offset="1" stop-color="#36d6d0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="640" fill="url(#bg)"/>
+  <rect x="56" y="54" width="1168" height="528" rx="24" fill="#111722" stroke="#334155" stroke-width="2"/>
+  <rect x="56" y="54" width="1168" height="10" fill="url(#rule)"/>
+  <g transform="translate(92 92)">
+    <rect width="112" height="112" rx="16" fill="#05070b" stroke="#f4c95d" stroke-width="2"/>
+    <path d="M56 18 94 40v44L56 106 18 84V40Z" fill="none" stroke="#f4c95d" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M56 34 78 47v26L56 86 34 73V47Z" fill="none" stroke="#36d6d0" stroke-width="6" stroke-linejoin="round"/>
+  </g>
+  <text x="236" y="126" fill="#36d6d0" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">CAD Guardian public proof repo</text>
+  <text x="92" y="242" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="72" font-weight="900">Revit and BIM Workflow</text>
+  <text x="92" y="326" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="72" font-weight="900">Quick-Start Automation Kit</text>
+  <text x="92" y="392" fill="#f4c95d" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="800">Service lane: Revit BIM Automation</text>
+  <text x="92" y="444" fill="#cbd5e1" font-family="Inter, Arial, sans-serif" font-size="29">Proof decision: ready for private BIM sample after public fixture evidence passes.</text>
+  <rect x="92" y="488" width="820" height="64" rx="12" fill="#07090d" stroke="#475569" stroke-width="2"/>
+  <text x="118" y="530" fill="#ffe8a3" font-family="SFMono-Regular, Consolas, monospace" font-size="24">npm run doctor &amp;&amp; npm run verify &amp;&amp; npm run demo</text>
+  <g transform="translate(972 420)">
+    <rect width="176" height="36" rx="18" fill="#f4c95d"/>
+    <text x="88" y="25" text-anchor="middle" fill="#111318" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="900">PUBLIC SAFE</text>
+    <text x="88" y="78" text-anchor="middle" fill="#cbd5e1" font-family="Inter, Arial, sans-serif" font-size="20">No private models</text>
+    <text x="88" y="108" text-anchor="middle" fill="#cbd5e1" font-family="Inter, Arial, sans-serif" font-size="20">No credentials</text>
+  </g>
+</svg>

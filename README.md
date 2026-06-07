@@ -1,76 +1,91 @@
 <p align="left">
-  <a href="https://www.cadguardian.com/">
+  <a href="https://www.cadguardian.com/services/revit-bim-automation">
     <img src="assets/cad-guardian-logo-highlighted.png" alt="CAD Guardian logo" width="120">
   </a>
 </p>
 
 # Revit and BIM Workflow Quick-Start Automation Kit
 
-CAD Guardian Pareto quick-start automation kit for drafters, CAD automation peers, technical interviews, and buyer-facing business-case discussions.
+Enterprise proof repo for evaluating whether a Revit/BIM automation engagement has enough model context, review ownership, and public-safe evidence to justify moving into a licensed Revit API implementation.
 
-> This CAD library is in development. This is an early public preview for feedback on the best business case, workflow shape, and proof path.
+**Service lane:** [CAD Guardian Revit BIM Automation](https://www.cadguardian.com/services/revit-bim-automation)
 
-## Live site
+Live proof page: [GitHub Pages](https://tsmithcode.github.io/cadguardian-revit-bim-automation-proof/) | [Download ZIP](https://github.com/tsmithcode/cadguardian-revit-bim-automation-proof/archive/refs/heads/main.zip) | [CAD Guardian](https://www.cadguardian.com/) | [TSmithCode.ai](https://www.tsmithcode.ai/)
 
-- GitHub Pages: https://tsmithcode.github.io/cadguardian-revit-bim-automation-proof/
-- Download ZIP: https://github.com/tsmithcode/cadguardian-revit-bim-automation-proof/archive/refs/heads/main.zip
-- CAD Guardian: https://www.cadguardian.com/
-- TSmithCode.ai: https://www.tsmithcode.ai/
-- Service page: https://www.cadguardian.com/services/revit-bim-automation
+## Best for
 
-## Why this exists
+- BIM managers evaluating document automation before private models are shared.
+- Revit teams that need families, parameters, sheets, and schedules checked before native add-in work begins.
+- Technical reviewers who want a runnable public proof with clear boundaries instead of screenshots or claims.
+- Buyer-side conversations where the first decision is whether a private sample and Revit runtime slice are justified.
 
-Prove BIM context, families, parameters, sheets, schedules, and reviewer gates before a Revit API add-in touches a live model.
+## Decision this proves
 
-## Fast run
+This repo proves a safe first decision: **the workflow is ready for a private BIM sample only after public fixtures show the model-context contract, family/parameter readiness, sheet/schedule boundary, and Revit API external command handoff.**
+
+It does not claim to automate a live Revit model in public. It proves the evidence path that should exist before a licensed Revit environment touches private BIM data.
+
+## Run locally
 
 ```bash
 npm run doctor
 npm run verify
 npm run demo
-dotnet build quickstart
+npm run quickstart:build
+npm run sanitize
 ```
 
 `npm run demo` runs the C# quickstart and writes `reports/quickstart-report.json`.
 
-## What is worth reusing
+## Expected output
 
-- `quickstart/Program.cs`: a small C# package-readiness engine with fixture receipts, Pareto checks, native runtime gates, and a JSON report.
-- `native/`: optional API/runtime examples for the licensed CAD environment.
-- `fixtures/public/`: approved public CAD fixtures only.
-- `docs/USER_GUIDE.md`: how to run and adapt the kit.
-- `docs/INTERVIEW_SCRIPT.md`: how to explain the business case without guessing.
+The quickstart report should identify:
 
-## STAR story
+- Repo title: `Revit and BIM Workflow Quick-Start Automation Kit`
+- Workflow class: `bim-document-readiness`
+- Review owner: `BIM manager`
+- Status: `ready-for-private-sample` when the bundled public evidence passes
+- Public fixture receipts for the approved IFC files under `fixtures/public/buildingsmart/`
+- Pareto checks for model context, family/parameter readiness, and sheet/schedule boundary
+- Revit API signals including `IExternalCommand`, `ExternalCommandData`, `Document`, `Transaction`, `FilteredElementCollector`, `Parameter`, `FamilyInstance`, `ViewSheet`, `ViewSchedule`, `BuiltInCategory`, and `BuiltInParameter`
 
-**Situation:** A BIM team wants faster model-adjacent output, but families, parameters, sheets, schedules, and review ownership make automation risky.
+## Proof boundary
 
-**Task:** Prove model context and document checks before a Revit API add-in touches a live model.
+This is a public evidence asset for BIM context, families, parameters, sheets, schedules, and reviewer gates. It is designed to prove the shape of a responsible automation handoff before a Revit API add-in touches a live model.
 
-**Action:** Bundle public IFC fixtures, validate model-context signals, and show a Revit external command scaffold for parameters, sheets, schedules, and family instances.
+The reusable proof pieces are:
 
-**Result:** A reviewer can run a safe BIM package check and discuss the Revit API boundary with concrete class names.
+- `quickstart/Program.cs`: C# package-readiness engine with fixture receipts, Pareto checks, native runtime gates, and JSON report output.
+- `native/revit-addin/CadGuardianRevitCommand.cs`: optional Revit API external command scaffold for the licensed runtime boundary.
+- `fixtures/public/`: approved public IFC fixtures only.
+- `docs/USER_GUIDE.md`: run and adaptation guide.
+- `docs/INTERVIEW_SCRIPT.md`: evaluator-safe explanation of the business case.
 
-## Pareto checks
+## What to send
 
-- **Model context gate:** Avoids automating against a model before project, family, and object context is visible. Handoff: `Document`, `FilteredElementCollector`, `BuiltInCategory`, and model ownership checks.
-- **Family and parameter readiness:** Turns ambiguous BIM requests into inspectable parameter and family checks. Handoff: `FamilyInstance`, `Parameter`, `BuiltInParameter`, and transaction-scoped edits.
-- **Sheet and schedule boundary:** Keeps output automation tied to reviewable sheets and schedules rather than hidden model mutation. Handoff: `ViewSheet`, `ViewSchedule`, and rollback-first external command proof.
+For an evaluator or buyer, send:
 
-## API and runtime signals
+- This repository link.
+- The service page: [CAD Guardian Revit BIM Automation](https://www.cadguardian.com/services/revit-bim-automation)
+- The generated report path: `reports/quickstart-report.json`
+- The exact commands above.
+- The decision statement: public fixtures prove the evidence path; private Revit work begins only after access, ownership, and parameter rules are approved.
 
-- IExternalCommand
-- ExternalCommandData
-- Document
-- Transaction
-- FilteredElementCollector
-- Parameter
-- FamilyInstance
-- ViewSheet
-- ViewSchedule
-- BuiltInCategory
-- BuiltInParameter
+## Related CAD Guardian page
+
+[CAD Guardian Revit BIM Automation](https://www.cadguardian.com/services/revit-bim-automation)
+
+## Native runtime boundary
+
+The native Revit example is intentionally scoped to the Revit API external command boundary. `native/revit-addin/CadGuardianRevitCommand.cs` shows the handoff concepts: `IExternalCommand`, `ExternalCommandData`, `Document`, `Transaction`, `FilteredElementCollector`, `Parameter`, `FamilyInstance`, `ViewSheet`, `ViewSchedule`, `BuiltInCategory`, and `BuiltInParameter`.
+
+That file requires Revit API references and a licensed Revit runtime. The public quickstart validates fixture evidence and produces a report; it does not impersonate licensed Revit execution.
 
 ## Public fixture boundary
 
-Only approved public sample files are bundled. No client files, private drawings, credentials, raw opportunity notes, or license-uncertain CAD assets are included.
+Only approved public sample files are bundled:
+
+- `fixtures/public/buildingsmart/Building-Architecture.ifc`
+- `fixtures/public/buildingsmart/wall-with-opening-and-window.ifc`
+
+No private names, credentials, private drawings/models, raw opportunity notes, unapproved BIM/CAD fixtures, or license-uncertain CAD assets belong in this repo.
