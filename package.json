@@ -1,6 +1,18 @@
 {
   "name": "cadguardian-revit-bim-automation-proof",
   "version": "3.0.0",
+  "description": "CAD Guardian public runnable Revit and BIM workflow evaluation kit for parameters, schedules, sheets, and Revit automation consulting.",
+  "keywords": [
+    "cadguardian",
+    "cad-automation",
+    "revit",
+    "bim",
+    "ifc",
+    "schedules",
+    "engineering-workflow",
+    "naics-541512",
+    "sic-7373"
+  ],
   "private": false,
   "type": "module",
   "scripts": {

@@ -1,16 +1,26 @@
 <p align="left">
-  <a href="https://www.cadguardian.com/services/revit-bim-automation">
+  <a href="https://www.cadguardian.com/revit-bim-automation-consulting">
     <img src="assets/cad-guardian-logo-highlighted.png" alt="CAD Guardian logo" width="120">
   </a>
 </p>
 
-# Revit and BIM Workflow Quick-Start Automation Kit
+# Revit and BIM Workflow Public Runnable Evaluation Kit
 
-Enterprise proof repo for evaluating whether a Revit/BIM automation engagement has enough model context, review ownership, and public-safe evidence to justify moving into a licensed Revit API implementation.
+Enterprise public evaluation kit for deciding whether a Revit/BIM automation engagement has enough model context, review ownership, and public-safe evidence to justify moving into a licensed Revit API implementation.
 
-**Service lane:** [CAD Guardian Revit BIM Automation](https://www.cadguardian.com/services/revit-bim-automation)
+**Canonical consulting path:** [Revit and BIM automation consulting](https://www.cadguardian.com/revit-bim-automation-consulting)
 
 Live proof page: [GitHub Pages](https://tsmithcode.github.io/cadguardian-revit-bim-automation-proof/) | [Download ZIP](https://github.com/tsmithcode/cadguardian-revit-bim-automation-proof/archive/refs/heads/main.zip) | [CAD Guardian](https://www.cadguardian.com/) | [TSmithCode.ai](https://www.tsmithcode.ai/)
+
+## CAD Guardian procurement fit
+
+- Legal/procurement entity: CAD Guardian LLC, Delaware LLC.
+- Primary classification: NAICS 541512 Computer Systems Design Services; SIC 7373 Computer Integrated Systems Design.
+- Secondary implementation fit: NAICS 541511 Custom Computer Programming Services when the engagement includes custom software, API, desktop, reporting, or integration work.
+- Public offer fit: Engineering Workflow Automation; Drawing/Document Automation Slice; Implementation Build Slice.
+- Canonical consulting paths: [Revit and BIM automation consulting](https://www.cadguardian.com/revit-bim-automation-consulting), [engineering workflow automation consulting](https://www.cadguardian.com/engineering-workflow-automation-consulting), and [drawing package automation consulting](https://www.cadguardian.com/drawing-package-automation-consulting).
+- Public runnable proof kit available; private customer artifacts are not exposed.
+- GitHub social preview asset: `assets/github-social-preview.png` with SVG source at `assets/github-social-preview.svg`.
 
 ## Best for
 
@@ -66,14 +76,14 @@ The reusable proof pieces are:
 For an evaluator or buyer, send:
 
 - This repository link.
-- The service page: [CAD Guardian Revit BIM Automation](https://www.cadguardian.com/services/revit-bim-automation)
+- The canonical consulting page: [Revit and BIM automation consulting](https://www.cadguardian.com/revit-bim-automation-consulting)
 - The generated report path: `reports/quickstart-report.json`
 - The exact commands above.
 - The decision statement: public fixtures prove the evidence path; private Revit work begins only after access, ownership, and parameter rules are approved.
 
 ## Related CAD Guardian page
 
-[CAD Guardian Revit BIM Automation](https://www.cadguardian.com/services/revit-bim-automation)
+[Revit and BIM automation consulting](https://www.cadguardian.com/revit-bim-automation-consulting) | [engineering workflow automation consulting](https://www.cadguardian.com/engineering-workflow-automation-consulting) | [drawing package automation consulting](https://www.cadguardian.com/drawing-package-automation-consulting)
 
 ## Native runtime boundary
 
